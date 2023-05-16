@@ -3,8 +3,8 @@
 {% block content %}
 <div>Is it the number <strong>{{ number }}</strong></div>
 <div>
-    <div><a href="/attempt?guessed=yes">Yes</a></div>
-    <div><a href="/attempt?guessed=bigger">No, bigger</a></div>
-    <div><a href="/attempt?guessed=less">No, less</a></div>
+    <div><a href="{{ url_for('attempt') }}?guessed=yes">Yes</a></div>
+    <div><a href="{{ url_for('attempt') }}?guessed=bigger">No, bigger</a></div>
+    <div><a href="{{ url_for('attempt') }}?guessed=less">No, less</a></div>
 </div>
 {% endblock content %}
